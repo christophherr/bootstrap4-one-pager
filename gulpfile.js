@@ -30,7 +30,8 @@ gulp.task('js', () => {
 // Watch and serve Sass files
 gulp.task('serve', ['sass'], () => {
     browserSync.init({
-        server: './src'
+        server: './src',
+        browser: 'chrome'
     });
 
     gulp.watch(
